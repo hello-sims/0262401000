@@ -1,12 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>자주&묻는&질문&요약</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Guide Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>안내문</h1>
-    <ul>
-        <li><a href="신용평가신청방법.pdf" target="_blank">보기</a></li>
-    </ul>
+    <h1>PDF Guide Links</h1>
+    <div class="container">
+        <div class="card">
+            <h2>보증 신청 방법 (신규)</h2>
+            <a href="https://github.com/your-username/your-repository/blob/main/신규.pdf" target="_blank">View PDF</a>
+        </div>
+        <div class="card">
+            <h2>보증 신청 방법 (추가, 공기연장, 감액, 기재사항변경)</h2>
+            <a href="https://github.com/your-username/your-repository/blob/main/추가_공기연장_감액_기재사항변경.pdf" target="_blank">View PDF</a>
+        </div>
+        <div class="card">
+            <h2>보증 해제 방법</h2>
+            <a href="https://github.com/your-username/your-repository/blob/main/해제.pdf" target="_blank">View PDF</a>
+        </div>
+        <div class="card">
+            <h2>근재 신청 방법</h2>
+            <a href="https://github.com/your-username/your-repository/blob/main/근재.pdf" target="_blank">View PDF</a>
+        </div>
+        <div class="card">
+            <h2>신용평가 방법</h2>
+            <a href="https://github.com/your-username/your-repository/blob/main/신용평가.pdf" target="_blank">View PDF</a>
+        </div>
+    </div>
 </body>
 </html>
