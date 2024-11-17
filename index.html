@@ -3,68 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Guide Links</title>
+    <title>자주 문의하는 질문</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             background-color: #f9f9f9;
             margin: 20px;
+            color: #333;
         }
         h1 {
             text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #444;
         }
         .container {
             display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .row {
+            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            margin-top: 20px;
         }
         .card {
-            background: #fff;
+            background: #f4f4f4;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         .card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         }
         .card a {
             text-decoration: none;
-            color: #007BFF;
+            font-size: 1.1em;
             font-weight: bold;
+            color: #333;
         }
+        .card:nth-child(1) { background-color: #eef7fd; }
+        .card:nth-child(2) { background-color: #f7fdee; }
+        .card:nth-child(3) { background-color: #fef4ee; }
+        .card:nth-child(4) { background-color: #eefdf5; }
+        .card:nth-child(5) { background-color: #f7eefc; }
+        .card:nth-child(6) { background-color: #fcf7ee; }
     </style>
 </head>
 <body>
-    <h1>PDF Guide Links</h1>
+    <h1>자주 문의하는 질문</h1>
     <div class="container">
-        <div class="card">
-            <h2>보증 신청 방법 (신규)</h2>
-            <a href="https://hello-sims.github.io/0262401000/new.pdf" target="_blank">View PDF</a>
+        <!-- 첫째 줄 -->
+        <div class="row">
+            <div class="card">
+                <a href="https://hello-sims.github.io/0262401000/new.pdf">보증 신청 방법 (신규)</a>
+            </div>
+            <div class="card">
+                <a href="https://hello-sims.github.io/0262401000/plus.pdf">보증 신청 방법 (추가, 공기연장, 감액, 기재사항변경)</a>
+            </div>
+            <div class="card">
+                <a href="https://hello-sims.github.io/0262401000/cancel.pdf">보증 해제 방법</a>
+            </div>
         </div>
-        <div class="card">
-            <h2>보증 신청 방법 (추가, 공기연장, 감액, 기재사항변경)</h2>
-            <a href="https://hello-sims.github.io/0262401000/plus.pdf" target="_blank">View PDF</a>
+        <!-- 둘째 줄 -->
+        <div class="row">
+            <div class="card">
+                <a href="https://hello-sims.github.io/0262401000/gunje.pdf">근재 신청 방법</a>
+            </div>
         </div>
-        <div class="card">
-            <h2>보증 해제 방법</h2>
-            <a href="https://hello-sims.github.io/0262401000/cancel.pdf" target="_blank">View PDF</a>
+        <!-- 셋째 줄 -->
+        <div class="row">
+            <div class="card">
+                <a href="https://hello-sims.github.io/0262401000/sinyoung.pdf">신용평가 방법</a>
+            </div>
         </div>
-        <div class="card">
-            <h2>근재 신청 방법</h2>
-            <a href="https://hello-sims.github.io/0262401000/gunje.pdf" target="_blank">View PDF</a>
-        </div>
-        <div class="card">
-            <h2>신용평가 방법</h2>
-            <a href="https://hello-sims.github.io/0262401000/sinyoung.pdf" target="_blank">View PDF</a>
-        </div>
-        <div class="card">
-            <h2>약정 신청 방법</h2>
-            <a href="https://hello-sims.github.io/0262401000/yakjung.pdf" target="_blank">View PDF</a>
-        </div>
+        <!-- 넷째 줄 -->
+        <div class="row">
+            <div class="card">
+                <a href="https://hello-sims.github.io/0262401000/yakjung.pdf">약정 신청 방법</a>
+            </div>
         </div>
     </div>
 </body>
